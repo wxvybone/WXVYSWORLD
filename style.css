@@ -1,0 +1,54 @@
+/* styles.css */
+
+/* Reset some default styles */
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden; /* Hide overflow to prevent scrollbars */
+}
+
+/* Style the background video container */
+.background-video-container {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+}
+
+/* Style the video */
+.background-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Style the content container */
+.content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff; /* Set text color */
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.5); /* Add a semi-transparent background */
+}
+
+/* Style the centered big text */
+.container {
+  padding: 20px;
+}
+
+.big-text {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+h2 {
+  font-size: 18px;
+}
+
+/* Add additional styling as needed */
