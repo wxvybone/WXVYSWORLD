@@ -2,7 +2,7 @@
 <html lang="en" >
 <head>
   <meta charset="UTF-8">
-  <title>CodePen - Main Page</title>
+  <title>CodePen - WXVY&#39;$ WORLD</title>
   <link rel="stylesheet" href="./style.css">
 
 </head>
@@ -12,25 +12,119 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles.css">
-  <title>Center Big Text with Background Video</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<style>
+		/* Apply styles to make the video fullscreen */
+		body,
+		html {
+			height: 100%;
+			margin: 0;
+			overflow: hidden;
+			/* Hide scrollbars */
+		}
+
+		/* Apply styles to center the video */
+		.background-video {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+		}
+
+		/* Remove video controls and autoplay */
+		video {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+			/* Cover the entire screen without stretching */
+		}
+
+		/* Style for content */
+		.content {
+			position: relative;
+			z-index: 1;
+			/* Place content above the video */
+			text-align: center;
+			padding: 20px;
+		}
+	</style>
+	<title>Fullscreen Background Video</title>
 </head>
 
 <body>
-  <div class="background-video-container">
-    <video autoplay loop class="background-video">
-      <source src="https://dl.dropboxusercontent.com/scl/fi/b0cstzm4wwn7jyfgzperz/Website-vid-Made-with-Clipchamp.mp4" type="video/mp4">
-      <!-- Replace with your video URL -->
-    </video>
-    <div class="content">
-      <div class="container">
-        <h1 class="big-text">🌐"WXVY'S WORLD"🌐</h1>
-        <h2>"An Assortment Of Works That Inspire"</h2>
-      </div>
-    </div>
-  </div>
+	<div class="background-video">
+		<video autoplay loop muted>
+			<source src="https://shorturl.at/jqCWZ" type="video/mp4">
+		</video>
+		<div class="content">
+			<h1>🌐"WXVY'S WORLD"🌐</h1>
+			<!DOCTYPE html>
+			<html lang="en">
+
+			<head>
+				<meta charset="UTF-8">
+				<meta name="viewport" content="width=device-width, initial-scale=1.0">
+				<title>Random Sentence Generator</title>
+			</head>
+
+			<body>
+				<h2>
+					<p id="randomSentence"></p>
+				</h2>
+
+				<script>
+					// Array of predetermined sentences
+					const sentences = [
+						'"ART I$ HOW WE DECORATE $PACE, MU$IC I$ HOW WE DECORATE TIME"',
+						'"A JOURNEY OF A THOU$AND MILE$ BEGIN$ WITH A $INGLE $TEP."',
+						'"TO BE OR NOT TO BE, THAT I$ THE QUE$TION."',
+						'"ALL THAT GLITTER$ I$ NOT GOLD."',
+						'"WHERE THERE I$ A WILL, THERE I$ A WAY."',
+						'"ACTION$ $PEAK LOUDER THAN WORD$."',
+						'"BEAUTY I$ IN THE EYE OF THE BEHOLDER."',
+						'“WEALTH I$ OF THE MIND NOT THE POCKET”',
+						'“ART $HOULD COMFORT THE DI$TURBED AND DI$TURB THE COMFORTABLE”',
+						'“KEEP THE CONVO BRIEF”',
+						'“LET’$ START HERE”',
+						// Add more sentences as needed
+					];
+					// Function to generate a random sentence
+					function generateRandomSentence() {
+						// Get a random index from the array
+						const randomIndex = Math.floor(Math.random() * sentences.length);
+						// Get the random sentence based on the random index
+						const randomSentence = sentences[randomIndex];
+						// Display the random sentence on the web page
+						document.getElementById("randomSentence").textContent = randomSentence;
+					}
+					// Call the function to generate a random sentence initially
+					generateRandomSentence();
+				</script>
+			</body>
+
+			</html>
+
+			<ul>
+				<li>
+					<h3><a href="https://wxvybone.github.io/FASHIONFALLZ/">"FASHION"</a></h3>
+				</li>
+				<li>
+					<h3><a href="https://wxvybone.github.io/tunes/">"MUSIC"</a></h3>
+				</li>
+				<li>
+					<h3><a href="LINK">"ENTERTAINMENT"</a></h3>
+				</li>
+				<li>
+					<h3><a href="LINK">"CULTURE"</a></h3>
+				</li>
+				<li>
+					<h3><a href="LINK">"SPORTS"</a></h3>
+				</li>
+			</ul>
+		</div>
+	</div>
 </body>
 
 </html>
