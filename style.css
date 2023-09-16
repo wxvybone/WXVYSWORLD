@@ -1,54 +1,39 @@
-/* styles.css */
-
-/* Reset some default styles */
+/* Reset default margin and padding for the body element */
 body {
-  margin: 0;
-  padding: 0;
-  overflow: hidden; /* Hide overflow to prevent scrollbars */
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
 }
 
-/* Style the background video container */
-.background-video-container {
-  position: relative;
-  width: 100vw;
-  height: 100vh;
-}
-
-/* Style the video */
+/* Apply styles to the background video container */
 .background-video {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+	position: relative;
+	width: 100vw;
+	height: 100vh;
+	overflow: hidden;
 }
 
-/* Style the content container */
+/* Style the video element to cover the entire container */
+.background-video video {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+/* Style the content container to center the website content and make text magenta */
 .content {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  color: #fff; /* Set text color */
-  text-align: center;
-  background-color: rgba(0, 0, 0, 0.5); /* Add a semi-transparent background */
+	position: relative;
+	z-index: 1;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	color: magenta; /* Change text color to magenta */
+	font-family: Times New Roman, sans-serif;
 }
 
-/* Style the centered big text */
-.container {
-  padding: 20px;
-}
-
-.big-text {
-  font-size: 36px;
-  margin-bottom: 10px;
-}
-
-h2 {
-  font-size: 18px;
-}
-
-/* Add additional styling as needed */
+/* Additional styles can be added as needed */
